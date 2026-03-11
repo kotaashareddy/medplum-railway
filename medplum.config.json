@@ -1,21 +1,21 @@
 {
-  "baseUrl": "REPLACE_WITH_YOUR_SERVER_RAILWAY_URL",
-  "appBaseUrl": "REPLACE_WITH_YOUR_APP_RAILWAY_URL",
+  "baseUrl": "medplum-railway-production.up.railway.app",
+  "appBaseUrl": "medplum-railway-production.up.railway.app",
   "port": 8103,
   "database": {
-    "host": "REPLACE_WITH_PGHOST",
+    "host": "postgres.railway.internal",
     "port": 5432,
     "dbname": "railway",
-    "username": "REPLACE_WITH_PGUSER",
-    "password": "REPLACE_WITH_PGPASSWORD",
+    "username": "postgres",
+    "password": "XKvonPhWpaMHBqjSVqziMSTSpNWUhFlo",
     "ssl": {
       "require": false
     }
   },
   "redis": {
-    "host": "REPLACE_WITH_REDISHOST",
+    "host": "redis.railway.internal",
     "port": 6379,
-    "password": "REPLACE_WITH_REDISPASSWORD"
+    "password": "nahlcBgtYtfMnazLcnkIgcrgdtPLSyWh"
   },
   "binaryStorage": "file:///app/binary/",
   "supportEmail": "support@example.com",
