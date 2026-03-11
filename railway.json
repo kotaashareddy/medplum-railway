@@ -5,7 +5,6 @@
     "dockerfilePath": "Dockerfile"
   },
   "deploy": {
-    "startCommand": "medplum-server /app/medplum.config.json",
     "healthcheckPath": "/healthcheck",
     "restartPolicyType": "ON_FAILURE"
   }
