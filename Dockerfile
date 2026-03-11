@@ -1,16 +1,8 @@
-FROM node:20-slim
+FROM medplum/medplum-server:latest
 
-WORKDIR /app
-
-# Install Medplum server from NPM
-RUN npm install -g @medplum/server
-
-# Create config and binary storage directories
-RUN mkdir -p /app/binary
-
-# Copy config file
-COPY medplum.config.json /app/medplum.config.json
+# Copy your config into the container
+COPY medplum.config.json /usr/src/medplum/medplum.config.json
 
 EXPOSE 8103
 
-CMD ["medplum-server", "/app/medplum.config.json"]
+CMD ["node", "dist/index.js", "file:/usr/src/medplum/medplum.config.json"]
