@@ -1,6 +1,6 @@
 {
   "baseUrl": "medplum-railway-production.up.railway.app",
-  "appBaseUrl": "medplum-railway-production.up.railway.app",
+  "appBaseUrl": "https://app.medplum.com/",
   "port": 8103,
   "database": {
     "host": "postgres.railway.internal",
@@ -19,5 +19,6 @@
   },
   "binaryStorage": "file:///app/binary/",
   "supportEmail": "support@example.com",
-  "registerEnabled": true
+  "registerEnabled": true,
+   "logLevel": "info"
 }
