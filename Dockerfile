@@ -1,5 +1,6 @@
 FROM medplum/medplum-server:latest
 
-EXPOSE 8103
+# Copy to the exact directory where the server process runs from
+COPY medplum.config.json /usr/src/medplum/packages/server/medplum.config.json
 
-CMD ["node", "--require", "./packages/server/dist/otel/instrumentation.js", "packages/server/dist/index.js", "env"]
+EXPOSE 8103
